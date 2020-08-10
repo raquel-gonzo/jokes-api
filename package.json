@@ -1,0 +1,11 @@
+{
+    "name": "JokesAPI",
+    "description": "jokes api",
+    "version": "0.0.0",
+    "private": true,
+    "author": "Rachel Gonzalez",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.9.28"
+    }
+}
