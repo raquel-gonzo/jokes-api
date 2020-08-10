@@ -19,7 +19,7 @@ const Joke = mongoose.model('Joke', JokeSchema);
 
 app.get("/api/jokes", (req, res) => {
     Joke.find({}, (data) => {
-        console.log(data);
+        
     });
     // .then( data => res.json(data))
     // .catch((err) => res.json(err));
