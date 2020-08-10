@@ -2,8 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 
+require("./server/config/mongoose.config");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}))
+
+const AllMyRoutes = require("./server/routes/jokes.routes");
+AllMyRoutes(app);
 
 // mongoose.connect("mongodb://localhost/jokes-api")
 // .then(() => console.log("Established a connection to the database."))
